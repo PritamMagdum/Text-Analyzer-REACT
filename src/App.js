@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      <Navbar title="MAGDUM" about="AboutUs" mode={mode} toggleMode={toggleMode}></Navbar>   {/*Navbar with props*/}
+      <Navbar title="Text Research" about="AboutUs" mode={mode} toggleMode={toggleMode}></Navbar>   {/*Navbar with props*/}
       {/* <Navbar></Navbar> */}
       <div className="container my-3">
         <TextForm heading="Enter your text to analyse"></TextForm>
