@@ -26,14 +26,14 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar title="Text Research" about="AboutUs" mode={mode} toggleMode={toggleMode}></Navbar>   {/*Navbar with props*/}
+        <Navbar title="Text Counter" about="AboutUs" mode={mode} toggleMode={toggleMode}></Navbar>   {/*Navbar with props*/}
         {/* <Navbar></Navbar> */}
         <div className="container my-3">
           <Routes>
-            <Route path='/' element={<TextForm heading="Enter your text to analyse" />}>
+            <Route exact path='/' element={<TextForm heading="Enter your text to analyse" />}>
               {/* <TextForm heading="Enter your text to analyse"></TextForm> */}
             </Route>
-            <Route path='/About' element={<About />}>
+            <Route exact path='/About' element={<About />}>
               {/* <About></About> */}
             </Route>
           </Routes>
